@@ -4,8 +4,8 @@ module.exports = {
   init: (httpServer) => {
     io = require("socket.io")(httpServer, {
       cors: {
-        //origin: '*',
-        origin: "https://chat-ban-hang-fe.vercel.app",
+        origin: '*',
+        //origin: "https://chat-ban-hang-fe.vercel.app",
         credentials: true,
       },
     });

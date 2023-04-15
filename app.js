@@ -10,7 +10,7 @@ dotenv.config();
 const app = express();
 app.use(
   cors({
-    origin: ["https://websocket-fe.vercel.app","https://chat-ban-hang-fe.vercel.app", "http://localhost:3000", "http://localhost:3001","http://192.168.31.38:3000"],
+    origin: ["https://chat-ban-hang-fe.vercel.app", "http://localhost:3000", "http://localhost:3001","http://192.168.31.38:3000"],
     methods: ["POST", "PUT", "GET", "OPTIONS", "HEAD"],
     credentials: true,
   })
